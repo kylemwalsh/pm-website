@@ -48,7 +48,6 @@ Navigation trigger - visible on small devices only
   height: 44px;
   width: 44px;
   border-radius: 0.25em;
-  background: #535f6b;
   /* reset button style */
   cursor: pointer;
   -webkit-appearance: none;
