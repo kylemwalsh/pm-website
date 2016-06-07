@@ -401,7 +401,7 @@ Content Sections - basic style
   height: 100vh;
   background: white;
 }
-.cd-section:nth-of-type(even) {
+.cd-section:nth-of-type(odd) {
   background-color: #f1f1f1;
 }
 .cd-section > div {
@@ -511,7 +511,7 @@ no-js
 #top-link-block.affix-top {
   position: absolute; /* allows it to "slide" up into view */
   bottom: -82px;
-  left: 30px;
+  right: 30px;
 }
 #top-link-block.affix {
   position: fixed; /* keeps it on the bottom once in view */
@@ -521,11 +521,107 @@ no-js
 
 footer {
   padding:30px 0;
+  background: #f1f1f1;
 }
 
 footer p {
   margin:0;
 }
+
+/*!*-----------------footer----------------*!*/
+
+/*aside.clients img {*/
+  /*margin: 50px auto;*/
+/*}*/
+
+/*!*main background*!*/
+/*.footer-v1 .footer {*/
+  /*padding: 40px 0;*/
+  /*background: #5d5d5d;  !*-------------------------////CHANGE THIS////-----------------------------*!*/
+/*}*/
+
+/*!*all a tags*!*/
+/*.footer-v1 a {*/
+  /*color: #E25744;  !*-------------------------////CHANGE THIS////-----------------------------*!*/
+/*}*/
+
+/*.footer-v1 .headline {*/
+  /*display: block;*/
+  /*margin: 10px 0 25px 0;*/
+  /*!*border-bottom: 1px dotted #e4e9f0;*!*/
+/*}*/
+
+/*!*color of all headers in footer*!*/
+/*.footer-v1 .footer h2 {*/
+  /*color: #eee;  !*-------------------------////CHANGE THIS////-----------------------------*!*/
+  /*font-size: 18px;*/
+  /*font-weight: 200;*/
+/*}*/
+
+/*!*color of bottom underlines*!*/
+/*.footer-v1 .headline h2, .footer-v1 .headline h3, .footer-v1 .headline h4 {*/
+  /*margin: 0 0 -2px 0;*/
+  /*padding-bottom: 5px;*/
+  /*display: inline-block;*/
+  /*border-bottom: 2px solid #E25744;   !*-------------------------////CHANGE THIS////-----------------------------*!*/
+/*}*/
+
+/*.list-unstyled {*/
+  /*padding-left: 0;*/
+  /*list-style: none;*/
+/*}*/
+
+/*!*color of copyright*!*/
+/*.footer-v1 .copyright p {*/
+  /*color: #eee;  !*-------------------------////CHANGE THIS////-----------------------------*!*/
+  /*margin-top: 12px;*/
+/*}*/
+
+/*.link-list a {*/
+  /*color: #eee;  !*-------------------------////CHANGE THIS////-----------------------------*!*/
+  /*font-size: 11px;*/
+  /*padding: 6px 0px;*/
+  /*display: inline-block;*/
+  /*!*text-transform: uppercase;*!*/
+/*}*/
+
+/*.footer-v1 address {*/
+  /*line-height: 23px;*/
+  /*color: #eee;  !*-------------------------////CHANGE THIS////-----------------------------*!*/
+/*}*/
+
+/*.footer-v1 .copyright {*/
+  /*background: #444444;  !*-------------------------////CHANGE THIS////-----------------------------*!*/
+  /*border-top: none;*/
+  /*padding: 10px 0 5px;*/
+/*}*/
+
+/*.footer-v1 .copyright a {*/
+  /*margin: 0 2px;*/
+/*}*/
+
+/*.footer-logo {*/
+  /*font-size:25px;*/
+  /*color: white;*/
+
+/*}*/
+
+/*.footer-v1 {*/
+  /*color:white;*/
+/*}*/
+
+/*.footer-v1 .footer-socials {*/
+  /*margin-top: 12px;*/
+  /*text-align: right;*/
+/*}*/
+
+/*.link-list li i {*/
+  /*color: #bbb;*/
+  /*float: right;*/
+  /*margin-top: 10px;*/
+/*}*/
+
+/*!*----------------------------------*!*/
 
 .loader {
   position: fixed;
@@ -581,4 +677,13 @@ footer p {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.index-nav a {
+  /*border: 1px solid #1f6088;*/
+  /*padding:10px 15px;*/
+  /*background:white;*/
+  color: white;
+  font-size:20px;
+  text-decoration:none;
 }

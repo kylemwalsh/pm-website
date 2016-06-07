@@ -2,6 +2,7 @@ jQuery(document).ready(function($){
 	var	scrolling = false;
 	var contentSections = $('.cd-section'),
 		verticalNavigation = $('.cd-vertical-nav'),
+		indexNavigation = $('.index-nav'),
 		navigationItems = verticalNavigation.find('a'),
 		navTrigger = $('.cd-nav-trigger'),
 		scrollArrow = $('.cd-scroll-down');
@@ -14,6 +15,12 @@ jQuery(document).ready(function($){
         smoothScroll($(this.hash));
         verticalNavigation.removeClass('open');
     });
+
+	indexNavigation.on('click', 'a', function(event){
+		event.preventDefault();
+		smoothScroll($(this.hash));
+		//verticalNavigation.removeClass('open');
+	});
 
     //smooth scroll to the second section
     scrollArrow.on('click', function(event){
@@ -64,4 +71,5 @@ jQuery(document).ready(function($){
 	$('#backToTopBtn').click(function(){
 		$('html,body').animate({scrollTop:0},'slow');return false;
 	});
+
 });
