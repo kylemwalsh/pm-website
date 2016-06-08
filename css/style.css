@@ -8,12 +8,13 @@ Primary style
 }
 
 html {
-  font-size: 62.5%;
+  /*font-size: 62.5%;*/
 }
 
 body {
-  font-size: 1.6rem;
-  font-family: "Sintony", sans-serif;
+  /*font-size: 1.2rem;*/
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight:200;
   color: #535f6b;
   background-color: white;
   -webkit-font-smoothing: antialiased;
@@ -21,7 +22,7 @@ body {
 }
 
 a {
-  color: #c0a672;
+  color: #6E98B2;
   text-decoration: none;
 }
 
@@ -34,7 +35,7 @@ a {
   color: transparent;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Navigation trigger - visible on small devices only
 
@@ -97,7 +98,7 @@ Navigation trigger - visible on small devices only
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Vertical navigation
 
@@ -135,7 +136,7 @@ Vertical navigation
   border-bottom: 1px solid rgba(58, 44, 65, 0.1);
 }
 .cd-vertical-nav a.active {
-  color: #c0a672;
+  color: #6E98B2;
 }
 .cd-vertical-nav.open {
   -webkit-transform: scale(1);
@@ -222,7 +223,7 @@ Vertical navigation
     /* vertically align <ul> inside <nav>*/
     display: table-cell;
     vertical-align: middle;
-    text-align: center;
+    text-align: left;
   }
   .cd-vertical-nav a {
     position: relative;
@@ -255,7 +256,7 @@ Vertical navigation
     height: 32px;
     width: 32px;
     border-radius: 50%;
-    background: #42b4d6;
+    background: #f1f1f1;
     -webkit-transform: translateX(-50%) scale(0.25);
     -moz-transform: translateX(-50%) scale(0.25);
     -ms-transform: translateX(-50%) scale(0.25);
@@ -282,7 +283,7 @@ Vertical navigation
     transition: transform 0.4s 0s, opacity 0.1s 0.3s;
   }
   .cd-vertical-nav a.active::before, .no-touch .cd-vertical-nav a:hover::before {
-    background-color: #c0a672;
+    background-color: #6E98B2;
   }
   .cd-vertical-nav li:first-of-type a::after {
     /* change icon using image sprites */
@@ -389,50 +390,68 @@ Vertical navigation
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Content Sections - basic style
 
 -------------------------------- */
-.cd-section {
+.cd-section.index-nav {
   /* vertically align its content*/
   display: table;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
+  background: white;
+}
+.vert-center > div {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.cd-section {
+  /* vertically align its content*/
+  /*display: table;*/
+  width: 100%;
+  /*height: 100vh;*/
+  overflow: hidden;
   background: white;
 }
 .cd-section:nth-of-type(odd) {
-  background-color: #f1f1f1;
+  background-color: #1F6088;
+  color: #ffffff !important;
 }
-.cd-section > div {
+.vert-center > div {
   /* vertically align <div> inside <section> */
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
+  /*display: table-cell;*/
+  /*vertical-align: middle;*/
+  /*text-align: left;*/
 }
 .cd-section h1, .cd-section h2 {
-  width: 90%;
-  margin: 0 auto;
-  text-transform: uppercase;
-  font-size: 2.4rem;
+  /*width: 100%;*/
+  /*margin: 0 auto;*/
+  /*text-transform: uppercase;*/
+  /*font-size: 1.6rem;*/
+  font-weight:400;
   line-height: 1.4;
+  text-align: center;
 }
 .cd-section h1 b, .cd-section h2 b {
   color: #584c5e;
 }
 .cd-section p {
-  margin: 1em auto 0;
+  margin: 1em 0;
   line-height: 1.6;
-  width: 90%;
-  max-width: 680px;
-  color: #535f6b;
+  /*width: 90%;*/
+  /*max-width: 680px;*/
+  /*color: #535f6b;*/
 }
 @media only screen and (min-width: 800px) {
   .cd-section h1, .cd-section h2 {
-    font-size: 3rem;
+    /*font-size: 3rem;*/
   }
   .cd-section p {
-    font-size: 2rem;
+    /*font-size: 2rem;*/
   }
 }
 
@@ -451,7 +470,7 @@ Content Sections - basic style
   background: url(../../../../Downloads/vertical-fixed-navigation-2/img/cd-arrow-bottom.svg) no-repeat center center;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 no-js
 
@@ -491,7 +510,7 @@ no-js
   color: #42b4d6;
 }
 .no-js .cd-vertical-nav a.active {
-  color: #c0a672;
+  color: #6E98B2;
 }
 .no-js .cd-vertical-nav a::after, .no-js .cd-vertical-nav a::before {
   display: none;
@@ -640,6 +659,7 @@ footer p {
 .logo {
   width: 50%;
   margin:0 auto;
+  margin-top: -50px;
 }
 
 .navbar-brand {
@@ -672,18 +692,151 @@ footer p {
 }
 
 #section1 {
-  background: url(../img/nysl.jpg) no-repeat center center fixed;
+  background: url(../img/nysl-dark.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
+.kevin-jpg {
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  border-radius:50%;
+  /*margin-top:40px;*/
+}
+
+.content-wrapper {
+  padding:50px 50px;
+}
+
+.who-wrapper {
+  padding:100px 50px;
+}
+
+.info-section .row {
+  margin:0;
+}
+
+.contact-us {
+  background: url(../img/nysl-dark.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  padding:20px 50px;
+}
+
+.contact-us h2, .contact-us p {
+  margin:0;
+  padding:20px 0;
+}
+
+.index-nav .row {
+  margin-top:40px;
+}
+
 .index-nav a {
-  /*border: 1px solid #1f6088;*/
-  /*padding:10px 15px;*/
-  /*background:white;*/
+  border: 1px solid white;
+  padding:10px 15px;
   color: white;
   font-size:20px;
   text-decoration:none;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
+
+.index-nav a:hover {
+  background: white;
+  color: #1F6088;
+  border-color: #1F6088;
+}
+
+.offering {
+  margin:30px 0;
+}
+
+.offering .offer {
+  color:#A2BCCD;
+  font-size:20px;
+  margin:0;
+}
+.offering .offer-text {
+  /*color: #4B7F9F;*/
+  /*font-size:16px;*/
+  margin:0;
+}
+
+.kevin {
+  font-size: 15px;
+  font-weight:bold;
+}
+
+/*.box {*/
+  /*border:1px solid white;*/
+  /*margin: 30px 0;*/
+  /*height:110px;*/
+  /*position: relative;*/
+  /*background: #4B7F9F;*/
+  /*-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);*/
+  /*box-shadow: 0 1px 1px rgba(0,0,0,.05);*/
+/*}*/
+
+/*.flipping-box .box p {*/
+  /*width: 50%;*/
+  /*height: 30%;*/
+  /*font-size:19px;*/
+  /*overflow: auto;*/
+  /*margin: auto;*/
+  /*text-align: center;*/
+  /*position: absolute;*/
+  /*top: 0; left: 0; bottom: 0; right: 0;*/
+  /*padding: 25px 0;*/
+/*}*/
+
+.number {
+  color: #4B7F9F;
+  font-size:60px;
+}
+
+.ad-text {
+  /*font-size: 16px;*/
+  margin-top:25px;
+}
+
+.contact-us p {
+  padding:0;
+  margin:0;
+  font-size:20px;
+}
+
+.contact-us a {
+  margin:10px 0 20px 0;
+  font-size:20px;
+}
+
+.contact-us .btn-primary {
+  border: 1px solid white;
+  padding:10px 15px;
+  -webkit-border-radius:0;
+  -moz-border-radius:0;
+  border-radius:0;
+  background: transparent;
+  color: white;
+  font-size:20px;
+  text-decoration:none;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: default;
+}
+
+.contact-us a.btn-primary:hover {
+  background: white;
+  color: #1F6088;
+  border-color: #1F6088;
+}
+
+/*#1F6088*/
