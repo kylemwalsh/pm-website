@@ -272,7 +272,7 @@ Vertical navigation
     top: 8px;
     height: 16px;
     width: 16px;
-    background: url(../../../../Downloads/vertical-fixed-navigation-2/img/cd-nav-icons.svg) no-repeat;
+    background: url(/img/cd-nav-icons.svg) no-repeat;
     -webkit-transform: translateX(-50%) scale(0);
     -moz-transform: translateX(-50%) scale(0);
     -ms-transform: translateX(-50%) scale(0);
