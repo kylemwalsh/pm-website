@@ -64,7 +64,7 @@ Navigation trigger - visible on small devices only
   position: absolute;
   height: 4px;
   width: 4px;
-  /*background-color: red;*/
+  background-color: #535f6b;
   border-radius: 50%;
   left: 50%;
   top: 50%;
@@ -684,12 +684,7 @@ footer p {
   color: white;
 }
 
-@media (min-width: 768px) {
-  .navbar-nav>li>a {
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-}
+
 
 #section1 {
   background: url(../img/nysl-dark.png) no-repeat center center fixed;
@@ -801,7 +796,7 @@ footer p {
   font-size:60px;
 }
 
-.ad-text {
+.advantage-text {
   /*font-size: 16px;*/
   margin-top:25px;
 }
@@ -839,4 +834,48 @@ footer p {
   border-color: #1F6088;
 }
 
+.advantage.mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #top-link-block {
+    display: none;
+  }
+
+  .content-wrapper {
+    padding:50px 10px;
+  }
+
+  .advantage.desktop {
+    display: none;
+  }
+
+  .advantage.mobile {
+    display: block;
+  }
+
+  .advantage-text {
+    /*font-size: 16px;*/
+    margin-top:10px;
+  }
+
+  .offering .offer {
+    text-align: center;
+  }
+
+  .index-nav .col-sm-4 {
+    margin:20px;
+  }
+
+  .index-nav .row .col-sm-4 a {
+    display: block;
+  }
+
+  .contact-us a.btn-primary {
+    display: block;
+    font-size:14px;
+  }
+
+}
 /*#1F6088*/
